@@ -1,0 +1,9 @@
+DATA WAREHOUSE, DATA LAKE, LAKEHOUSE são basicamentes locais de armazenamento em nuvem.
+
+DATA WAREHOUSE: é um local de armazenamento de dados fora do banco de dados, onde é feita uma cópia desses dados para não afetar e causar lentidão ao banco de dados transacional (funcionalidades da empresa (Onde todos os dados são armazenados ao vivo e a cores)),
+tem o maior fator contra que é o custo desse DW, é um metodo muito custoso.
+
+DATA  LAKE: É um local de armazenamento de arquivos, onde é feito todo o controle de arquivos de tal empresa, mas chega a um ponto de arquivos que não é mais víavel utilizado devido ao desempenho,
+o maior fator a favor é o seu custo, tem um custo muito baixo.
+
+LAKEHOUSE: onde os 2 mundos se juntaram, baixo custo e ótimo desempenho (é o mais utilizado hoje).

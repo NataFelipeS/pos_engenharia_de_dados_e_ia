@@ -1,0 +1,20 @@
+Conceitos de ETL e ELT
+
+A ETL era bem mais útilizada no passado. 
+Onde a galera extraia os dados de diferentes fontes de dados, tais como;
+Arquivos, SAP, IoT, Api's e outras.
+Com o tempo os profissionais começaram a ver alguns problemas nesse meio, pois eles extraiam o dado e transformavam diretamente pra depois carregar, mas caso houvesse algum erro acontecesse na transformação desses dados, 
+teriam que voltar e pegar novamente a extração, mas essa estração já não continham os mesmo dados da extração anterior, em alguns casos já não seriam dados validos para a necessidade do projeto.
+
+Então é ai que foi criado o metodo de ELT, onde eles extraem os dados das mesmas fontes de dados, mas já o carregam diretamento na base analítica(base onde é feito as análises e testes necessários(DL, DW e LH)), 
+e então transformam os dados lá dentro, se caso há algum erro na transformação eles simplesmentes voltam e pegam os dados já carregados na base analítica, onde mitigam ou eliminam esse problema de perca de dados,
+e nesse processo também após a transformação dos dados, é carregado novamente esses dados já totalmente tratado em forma de relatórios, dashbords e diferentes meios de visualizações para a equipe de operações.
+
+Mais algumas coisas que é bom salientar é o metodo medallion arch, faz parte também dos armazenamentos de dados né (DW, DL E LH), mas é bom já fixar aqui.
+
+Medallion Arch no ELT atual;
+é um processo de 3 camadas.
+Bronze: onde é extraidos os dados e são analizados os dados crús, onde você vai montar o seu planejamento para o Silver.
+Silver: onde é carregado e transformado os dados, fazendo todo o processo de limpeza e construção do produto de análise.
+Gold: onde é básicamente dado o acabamento do projeto, de forma grosseira o front-end desses dados, carregados em formato de relatórios, dashboards e outros meios de visualização.
+
