@@ -1,0 +1,11 @@
+Banco de Dados Relacionais
+    Os dados são armazenados em tabelas (linhas e colunas).
+    A estrutura(schema) deve ser definido.
+    Tabelas são relacionadas por chaves e unidades por operações de join.
+    Possuem SGBD (sistema de gerenciamento de banco de dados), consistência das transações.
+
+ACID conjunto de propriedades que definem uma transação em um banco de dados:
+A:  Atomicidade executa todas as transações ou nenhuma.
+C:  Consistência garante que a alteração sem corromper os dados.
+I:  Isolamento evita interferências nas alterações de múltiplos usuários.
+D:  Durabilidade garante a persistência dos dados.

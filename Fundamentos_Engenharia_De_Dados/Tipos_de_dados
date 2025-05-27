@@ -1,0 +1,8 @@
+Dados Estruturados: possuem estrutura (schema) definida.
+Exemplo: tabelas de um banco de dados. 
+
+Dados Semi-Estruturados: possuem uma estrutura flexível,
+podendo receber conteúdos variados. Exemplo: arquivos JSON e XML.
+
+Dados Não Estruturados as informações não estão estruturadas no arquivo, sendo necessário um processamento para extrair estas informações.
+Exemplo: imagens, vídeos e áudio.
